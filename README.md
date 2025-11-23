@@ -105,14 +105,26 @@ This is normal for DNR-based blocking.
 simple-site-blocker/
 │
 ├── manifest.json
-├── background.js
-├── options.html
-├── options.js
-├── blocked.html
-├── blocked.js
-├── icon16.png
-├── icon48.png
-└── icon128.png
+├── LICENSE
+├── README.md
+│
+├── assets/
+│   ├── icon16.png
+│   ├── icon48.png
+│   ├── icon128.png
+│   └── simple-site-blocker.svg
+│
+├── pages/
+│   ├── blocked.html
+│   ├── options.html
+│   └── popup.html
+│
+└── src/
+    ├── background.js
+    ├── blocked.js
+    ├── options.js
+    └── popup.js
+
 ```
 
 ---
