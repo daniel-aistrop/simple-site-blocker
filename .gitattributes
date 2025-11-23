@@ -1,0 +1,14 @@
+# Normalize text files
+* text=auto
+
+# Treat images and binaries correctly
+*.png binary
+*.jpg binary
+*.ico binary
+*.xcf binary
+
+# Don't include design assets in source archives
+design/** export-ignore
+
+# If you also don’t want the packaged extension zip in source downloads:
+simple-site-blocker.zip export-ignore
