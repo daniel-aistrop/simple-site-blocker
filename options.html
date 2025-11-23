@@ -378,6 +378,26 @@
         flex-direction: column;
       }
     }
+
+    .secondary-button {
+      border: 1px solid var(--border-strong);
+      border-radius: 999px;
+      padding: 7px 14px;
+      background: var(--bg-panel);
+      color: var(--text-muted);
+      font-size: 0.84rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .secondary-button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+
   </style>
 </head>
 <body>
@@ -437,13 +457,27 @@
       </div>
     </div>
 
+
+  
     <div class="footer-row">
       <button id="save" type="button">
         💾 Save
       </button>
+
+      <button id="export" type="button" class="secondary-button">
+        ⬇ Export list
+      </button>
+
+      <button id="import" type="button" class="secondary-button">
+        ⬆ Import list
+      </button>
+
+      <!-- hidden file input for import -->
+      <input id="import-file" type="file" accept=".txt,.blocklist,.json" style="display:none" />
+
       <span id="status" class="status"></span>
     </div>
-  </div>
+
 
   <!-- Help dialog -->
   <dialog id="help-dialog">
